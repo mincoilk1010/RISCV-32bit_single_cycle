@@ -1,0 +1,28 @@
+Reading netlist file: "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg"
+Parsing netlist file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg" completed
+Processing netlist completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.power.html" completed
+Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.pin.html" completed
+Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.html" completed
+Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.txt" completed
+Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.tr.html" completed
+Wed Sep  2 17:25:22 2026
+

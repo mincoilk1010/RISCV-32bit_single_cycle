@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.126 (w)1999-2026 BSI
+[*] Wed Sep  2 16:24:10 2026
+[*]
+[dumpfile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/riscv_top_wave_form.vcd"
+[dumpfile_mtime] "Wed Sep  2 16:09:57 2026"
+[dumpfile_size] 8557
+[savefile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/test_form.gtkw"
+[timestart] 108000
+[size] 1920 1009
+[pos] -46 -30
+*-14.400000 452000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] riscv_top_tb.
+[treeopen] riscv_top_tb.dut.
+[sst_width] 254
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 573
+@28
+riscv_top_tb.clk
+riscv_top_tb.arstn
+@22
+riscv_top_tb.led[5:0]
+@28
+riscv_top_tb.dut.alu_ctrl.ALUOp[1:0]
+riscv_top_tb.dut.alu_ctrl.funct[3:0]
+riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+@22
+riscv_top_tb.dut.rf.read_data_reg1[31:0]
+riscv_top_tb.dut.alu.ALU_result[31:0]
+riscv_top_tb.dut.data_mem.addr[31:0]
+@24
+riscv_top_tb.dut.data_mem.read_data[31:0]
+@22
+riscv_top_tb.dut.rf.write_addr_reg[4:0]
+@25
+riscv_top_tb.dut.rf.write_data[31:0]
+@22
+riscv_top_tb.dut.pc.in[31:0]
+riscv_top_tb.dut.pc.out[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

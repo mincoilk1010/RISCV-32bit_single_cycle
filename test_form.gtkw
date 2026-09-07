@@ -1,30 +1,48 @@
 [*]
 [*] GTKWave Analyzer v3.3.126 (w)1999-2026 BSI
-[*] Thu Sep  3 03:38:16 2026
+[*] Thu Sep  3 10:15:38 2026
 [*]
 [dumpfile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/riscv_top_wave_form.vcd"
 [dumpfile_mtime] "Wed Sep  2 16:09:57 2026"
 [dumpfile_size] 8557
 [savefile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/test_form.gtkw"
-[timestart] 0
+[timestart] 352040
 [size] 1920 1009
 [pos] -46 -30
-*-19.500000 449600 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-13.500000 386790 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] riscv_top_tb.
 [treeopen] riscv_top_tb.dut.
 [sst_width] 254
-[signals_width] 190
+[signals_width] 235
 [sst_expanded] 1
-[sst_vpaned_height] 573
+[sst_vpaned_height] 669
 @28
 riscv_top_tb.clk
 riscv_top_tb.arstn
 @22
 riscv_top_tb.led[5:0]
+@23
+riscv_top_tb.dut.ins_mem.instruction[31:0]
 @28
 riscv_top_tb.dut.alu_ctrl.ALUOp[1:0]
+@c00028
 riscv_top_tb.dut.alu_ctrl.funct[3:0]
+@28
+(0)riscv_top_tb.dut.alu_ctrl.funct[3:0]
+(1)riscv_top_tb.dut.alu_ctrl.funct[3:0]
+(2)riscv_top_tb.dut.alu_ctrl.funct[3:0]
+(3)riscv_top_tb.dut.alu_ctrl.funct[3:0]
+@1401200
+-group_end
+@c00028
 riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+@28
+(0)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+(1)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+(2)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+(3)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
+@1401200
+-group_end
 @22
 riscv_top_tb.dut.rf.read_data_reg1[31:0]
 riscv_top_tb.dut.alu.ALU_result[31:0]
@@ -39,7 +57,10 @@ riscv_top_tb.dut.rf.write_data[31:0]
 riscv_top_tb.dut.pc.in[31:0]
 riscv_top_tb.dut.pc.out[31:0]
 riscv_top_tb.dut.data_mem.addr[31:0]
-@25
+@24
 riscv_top_tb.dut.pc.in[31:0]
+@22
+riscv_top_tb.dut.alu.in1[31:0]
+riscv_top_tb.dut.alu.in2[31:0]
 [pattern_trace] 1
 [pattern_trace] 0

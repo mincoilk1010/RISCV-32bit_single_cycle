@@ -2,51 +2,7 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/PC.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/register_file.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/shift_left.v",
    "Type" : "verilog"
   }
  ],
@@ -55,7 +11,7 @@
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/temp/rtl_parser.result",
- "Top" : "riscv_top",
+ "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }

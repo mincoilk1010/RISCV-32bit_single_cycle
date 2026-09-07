@@ -1,13 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="riscv_top" Register="6" Lut="28" T_Register="14(6)" T_Alu="71(0)" T_Lut="577(28)" T_Ssram="144(0)">
- <SubModule name="pc" Register="8" T_Register="8(8)"/>
- <SubModule name="ins_mem" Lut="10" T_Lut="10(10)"/>
- <SubModule name="rf" Lut="66" Ssram="16" T_Lut="66(66)" T_Ssram="16(16)"/>
- <SubModule name="imm_gen" Lut="4" T_Lut="4(4)"/>
- <SubModule name="readdata_or_immgen" Lut="39" T_Lut="39(39)"/>
- <SubModule name="alu" Alu="64" Lut="50" T_Alu="64(64)" T_Lut="50(50)"/>
- <SubModule name="data_mem" Lut="256" Ssram="128" T_Lut="256(256)" T_Ssram="128(128)"/>
- <SubModule name="mem_to_reg_mux" Lut="108" T_Lut="108(108)"/>
- <SubModule name="pc_branch_adder" Alu="7" T_Alu="7(7)"/>
- <SubModule name="branch_mux" Lut="16" T_Lut="16(16)"/>
-</Module>
+<Module name="data_memory" Register="2048" Lut="1366" T_Register="2048(2048)" T_Lut="1366(1366)"/>

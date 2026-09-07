@@ -6,6 +6,6 @@
 40208233      // sub x4, x1, x2      // x4 = 10 - 5 = 5
 0020f2b3      // and x5, x1, x2      // x5 = 10 (1010) AND 5 (0101) = 0
 0020e333      // or  x6, x1, x2      // x6 = 10 (1010) OR 5 (0101) = 15
-001123b3      // slt x7, x2, x1      // compare: 5 < 10 là Đúng -> x7 = 1
+001123b3      // slt x7, x2, x1      // compare: 5 < 10 -> x7 = 1
 00302423      // sw  x3, 8(x0)       // store value 15 (from x3) to addr 8 in RAM
 00108063      // beq x1, x1, 0       //  x1 == x1 -> branch target = PC + 0 -> CPU freeze

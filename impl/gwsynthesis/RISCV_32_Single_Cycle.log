@@ -1,34 +1,11 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/PC.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v'
 Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/register_file.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v'
-Analyzing Verilog file '/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/shift_left.v'
-Compiling module 'riscv_top'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v":1)
-Compiling module 'PC'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/PC.v":1)
-Compiling module 'instruction_mem'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v":1)
-Extracting RAM for identifier 'rom'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v":5)
-Compiling module 'control_unit'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v":1)
-Compiling module 'register_file'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/register_file.v":1)
-Extracting RAM for identifier 'registers'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/register_file.v":11)
-Compiling module 'ImmGen'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v":1)
-Compiling module 'mux2_1'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v":1)
-Compiling module 'ALU_ctrl'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v":1)
-Compiling module 'ALU'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v":1)
 Compiling module 'data_memory'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v":1)
-Extracting RAM for identifier 'data_mem'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v":9)
-Compiling module 'add'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v":1)
-Compiling module 'shift_left'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/shift_left.v":1)
-NOTE  (EX0101) : Current top module is "riscv_top"
+Extracting RAM for identifier 'data_mem'("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v":10)
+NOTE  (EX0101) : Current top module is "data_memory"
 [5%] Running netlist conversion ...
+WARN  (CV0020) : Input addr[31:10] is unused("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v":3)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -44,10 +21,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "ALU_ctrl" instantiated to "alu_ctrl" is swept in optimizing("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v":89)
-WARN  (NL0002) : The module "control_unit" instantiated to "cu" is swept in optimizing("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v":60)
-WARN  (NL0002) : The module "add" instantiated to "pc_adder" is swept in optimizing("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v":119)
-WARN  (NL0002) : The module "shift_left" instantiated to "shift_left_1bit" is swept in optimizing("/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v":124)
 [95%] Generate netlist file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg" completed
 [100%] Generate report file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle_syn.rpt.html" completed
 GowinSynthesis finish

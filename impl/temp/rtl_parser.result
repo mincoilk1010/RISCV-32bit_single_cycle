@@ -1,10 +1,66 @@
 [
  {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
+  "InstLine" : 1,
+  "InstName" : "ALU",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "ALU"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
+  "InstLine" : 1,
+  "InstName" : "ALU_ctrl",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "ALU_ctrl"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
+  "InstLine" : 1,
+  "InstName" : "ImmGen",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "ImmGen"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
+  "InstLine" : 1,
+  "InstName" : "add",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "add"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
+  "InstLine" : 1,
+  "InstName" : "control_unit",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "control_unit"
+ },
+ {
   "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
   "InstLine" : 1,
   "InstName" : "data_memory",
   "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
   "ModuleLine" : 1,
   "ModuleName" : "data_memory"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
+  "InstLine" : 1,
+  "InstName" : "instruction_mem",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "instruction_mem"
+ },
+ {
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+  "InstLine" : 1,
+  "InstName" : "mux2_1",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "mux2_1"
  }
 ]

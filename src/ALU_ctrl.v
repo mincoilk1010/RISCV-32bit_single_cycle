@@ -11,7 +11,12 @@ module ALU_ctrl (
                 alu_ctrl = 4'b0000; //always add for load/store
             end
             2'b01: begin
-                alu_ctrl = 4'b1000; //always subtract for B-type
+                case(funct[2:0]) 
+                    3'b000, 3'b001: alu_ctrl = 4'b1000;
+                    3'b100, 3'b101: alu_ctrl = 4'b0010;
+                    3'b110, 3'b111: alu_ctrl = 4'b0011;
+                    default: alu_ctrl = 4'b0;
+                endcase
             end
             2'b10: begin
                 alu_ctrl = funct;

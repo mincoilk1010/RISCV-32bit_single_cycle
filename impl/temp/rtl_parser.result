@@ -1,66 +1,156 @@
 [
  {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
-  "InstLine" : 1,
-  "InstName" : "ALU",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "ALU"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
-  "InstLine" : 1,
-  "InstName" : "ALU_ctrl",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "ALU_ctrl"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
-  "InstLine" : 1,
-  "InstName" : "ImmGen",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "ImmGen"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
-  "InstLine" : 1,
-  "InstName" : "add",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "add"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
-  "InstLine" : 1,
-  "InstName" : "control_unit",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "control_unit"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
-  "InstLine" : 1,
-  "InstName" : "data_memory",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "data_memory"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
-  "InstLine" : 1,
-  "InstName" : "instruction_mem",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "instruction_mem"
- },
- {
-  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
-  "InstLine" : 1,
-  "InstName" : "mux2_1",
-  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "mux2_1"
+  "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+  "InstLine" : 2,
+  "InstName" : "riscv_top",
+  "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "riscv_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 38,
+    "InstName" : "pc",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/PC.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "PC"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 46,
+    "InstName" : "ins_mem",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/instruction_mem.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "instruction_mem"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 52,
+    "InstName" : "rf",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/register_file.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "register_file"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 64,
+    "InstName" : "imm_gen",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ImmGen.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ImmGen"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 70,
+    "InstName" : "cu",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "control_unit"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 87,
+    "InstName" : "alu_ctrl",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ALU_ctrl"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 94,
+    "InstName" : "alu",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ALU"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 102,
+    "InstName" : "branch_inst",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/branch_unit.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "branch_unit"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 110,
+    "InstName" : "data_mem",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/data_memory.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "data_memory"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 120,
+    "InstName" : "adder",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "add"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 127,
+    "InstName" : "PC_add_4",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/add.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "add"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 135,
+    "InstName" : "alusrc2_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 141,
+    "InstName" : "alusrc1_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 149,
+    "InstName" : "MemToReg_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 157,
+    "InstName" : "PcSrc_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 165,
+    "InstName" : "Jump_and_Branch_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 173,
+    "InstName" : "lui_sel",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   },
+   {
+    "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
+    "InstLine" : 180,
+    "InstName" : "write_data_reg_src_mux",
+    "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/mux2_1.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mux2_1"
+   }
+  ]
  }
 ]

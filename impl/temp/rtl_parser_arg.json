@@ -22,6 +22,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/branch_unit.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/control_unit.v",
    "Type" : "verilog"
   },
@@ -44,14 +48,6 @@
   {
    "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
    "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/shift_left.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/branch_unit.v",
-   "Type" : "verilog"
   }
  ],
  "IncludePath" : [
@@ -59,7 +55,7 @@
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/temp/rtl_parser.result",
- "Top" : "",
+ "Top" : "riscv_top",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }

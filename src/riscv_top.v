@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module riscv_top (
     input wire clk,
     input wire arstn,
@@ -5,6 +6,34 @@ module riscv_top (
 );
     wire [31:0] PC_next;
     wire [31:0] PC_out;
+    wire [31:0] inst;
+    wire [31:0] write_data_reg;
+    wire [31:0] read_data_reg1;
+    wire [31:0] read_data_reg2;
+    wire RegWrite;
+    wire [31:0] imm_out;
+    wire branch;
+    wire mem_read;
+    wire mem_to_reg;
+    wire [1:0] aluop;
+    wire mem_write;
+    wire alusrc1,alusrc2;
+    wire PcSrc;
+    wire jump;
+    wire lui;
+    wire write_data_reg_src;
+    wire [3:0] alu_ctrl_out;
+    wire [31:0] alu_result;
+    wire branch_out;
+    wire [31:0] mem_read_data;
+    wire [31:0] write_data_reg_in1;
+
+    wire [31:0] alu_in1;
+    wire [31:0] alu_in2;
+    wire [31:0] alu_result_or_read_data_mem;
+    wire [31:0] adder_in0;
+    wire [31:0] adder_in1;   
+    wire [31:0] write_data_reg_in0;
 
     PC pc (
         .clk(clk),
@@ -13,16 +42,13 @@ module riscv_top (
         .out(PC_out)
     );
 
-    wire [31:0] inst;
+
     instruction_mem ins_mem (
-        .read_addr(PC_next),
+        .read_addr(PC_out),
         .instruction(inst)
     );
 
-    wire [31:0] write_data_reg;
-    wire [31:0] read_data_reg1;
-    wire [31:0] read_data_reg2;
-    wire RegWrite;
+ 
     register_file rf (
         .clk(clk),
         .read_addr_reg1(inst[19:15]),
@@ -34,23 +60,13 @@ module riscv_top (
         .RegWrite(RegWrite)
     );
 
-    wire [31:0] imm_out;
+
     ImmGen imm_gen (
         .instruction(inst),
         .imm_out(imm_out)
     );
 
-    wire branch;
-    wire mem_read;
-    wire mem_to_reg;
-    wire [1:0] aluop;
-    wire mem_write;
-    wire alusrc1,alusrc2;
-    wire reg_write;
-    wire PcSrc;
-    wire jump;
-    wire lui;
-    wire write_data_reg_src;
+    
     control_unit cu (
         .opcode(inst[6:0]),
         .branch(branch),
@@ -60,21 +76,21 @@ module riscv_top (
         .aluop(aluop),
         .alusrc1(alusrc1),
         .alusrc2(alusrc2),
-        .reg_write(reg_write),
+        .reg_write(RegWrite),
         .PcSrc(PcSrc),
         .jump(jump),
         .lui(lui),
-        .wire_data_reg_src(write_data_reg_src)
+        .write_data_reg_src(write_data_reg_src)
     );
 
-    wire [3:0] alu_ctrl_out;
+
     ALU_ctrl alu_ctrl (
         .ALUOp(aluop),
         .funct({inst[30], inst[14:12]}),
         .alu_ctrl(alu_ctrl_out)
     );
 
-    wire [31:0] alu_result;
+
     ALU alu (
         .alu_ctrl(alu_ctrl_out),
         .in1(alu_in1),
@@ -82,15 +98,15 @@ module riscv_top (
         .ALU_result(alu_result)
     );
 
-    wire branch_out;
-    branch_unit branch (
+
+    branch_unit branch_inst (
         .alu_res(alu_result),
         .funct3(inst[14:12]),
         .branch_en(branch),
         .branch_out(branch_out)
     );
 
-    wire [31:0] mem_read_data;
+
     data_memory data_mem (
         .clk(clk),
         .addr(alu_result),
@@ -107,10 +123,15 @@ module riscv_top (
         .sum(PC_next)
     );
 
+
+    add PC_add_4 (
+        .in0(PC_out),
+        .in1(32'd4),
+        .sum(write_data_reg_in1)
+    );
+
     //all mux
 
-    wire [31:0] alu_in1;
-    wire [31:0] alu_in2;
     mux2_1 alusrc2_sel (
         .in0(read_data_reg1),
         .in1(PC_out),
@@ -124,7 +145,7 @@ module riscv_top (
         .out(alu_in2)
     );
 
-    wire [31:0] alu_result_or_read_data_mem;
+
     mux2_1 MemToReg_sel (
         .in0(alu_result),
         .in1(mem_read_data),
@@ -132,20 +153,35 @@ module riscv_top (
         .out(alu_result_or_read_data_mem)
     );
 
-    wire [31:0] adder_in0;
+
     mux2_1 PcSrc_sel (
         .in0(PC_out),
         .in1(read_data_reg1),
         .sel(PcSrc),
-        .out()
+        .out(adder_in0)
     );
 
-    wire [31:0] adder_in1;
+       
     mux2_1 Jump_and_Branch_sel (
         .in0(32'd4),
         .in1(imm_out),
         .sel(jump | branch_out),
         .out(adder_in1)
+    );
+    
+
+    mux2_1 lui_sel (
+        .in0(alu_result_or_read_data_mem),
+        .in1(imm_out),
+        .sel(lui),
+        .out(write_data_reg_in0)
+    );
+
+    mux2_1 write_data_reg_src_mux (
+        .in0(write_data_reg_in0),
+        .in1(write_data_reg_in1),
+        .sel(write_data_reg_src),
+        .out(write_data_reg)
     );
 
 

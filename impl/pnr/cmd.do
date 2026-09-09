@@ -2,6 +2,7 @@
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
 -cfg /home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/device.cfg
+-sdc /home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/timing.sdc
 -bit
 -tr
 -ph

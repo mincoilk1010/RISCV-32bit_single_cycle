@@ -1,4 +1,4 @@
-// Hex        // Assembly            
+// Hex        // Assembly
 
 00002083      // lw  x1, 0(x0)       // read 10(dec) from reg x1
 00402103      // lw  x2, 4(x0)       // read 5(dec) from reg x2
@@ -8,4 +8,21 @@
 0020e333      // or  x6, x1, x2      // x6 = 10 (1010) OR 5 (0101) = 15
 001123b3      // slt x7, x2, x1      // compare: 5 < 10 -> x7 = 1
 00302423      // sw  x3, 8(x0)       // store value 15 (from x3) to addr 8 in RAM
-00108063      // beq x1, x1, 0       //  x1 == x1 -> branch target = PC + 0 -> CPU freeze
+0020c433      // xor x8, x1, x2      // x8 = 10 XOR 5 = 15
+002094b3      // sll x9, x1, x2      // x9 = 10 << 5 = 320
+0020d533      // srl x10, x1, x2     // x10 = 10 >> 5 = 0
+4020d5b3      // sra x11, x1, x2     // x11 = 10 >>> 5 = 0
+00113633      // sltu x12, x2, x1    // compare unsigned: 5 < 10 -> x12 = 1
+00f08693      // addi x13, x1, 15    // x13 = 10 + 15 = 25
+00f0f713      // andi x14, x1, 15    // x14 = 10 AND 15 = 10
+00a16793      // ori x15, x2, 10     // x15 = 5 OR 10 = 15
+00000803      // lb  x16, 0(x0)      // load byte from addr 0
+00001883      // lh  x17, 0(x0)      // load halfword from addr 0
+00300623      // sb  x3, 12(x0)      // store byte 15 to addr 12
+00401723      // sh  x4, 14(x0)      // store halfword 5 to addr 14
+00001937      // lui x18, 1          // x18 = 1 << 12 = 4096
+00c009ef      // jal x19, 12         // jump PC+12, x19 = PC+4
+00098a67      // jalr x20, x19, 0    // jump back to x19, x20 = PC+4
+00209463      // bne x1, x2, 8       // 10 != 5 -> branch PC+8
+0020d463      // bge x1, x2, 8       // 10 >= 5 -> branch PC+8
+00108063      // beq x1, x1, 0       // x1 == x1 -> branch target = PC + 0 -> CPU freeze

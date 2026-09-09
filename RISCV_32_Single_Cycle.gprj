@@ -17,6 +17,7 @@
         <File path="src/mux2_1.v" type="file.verilog" enable="1"/>
         <File path="src/register_file.v" type="file.verilog" enable="1"/>
         <File path="src/riscv_top.v" type="file.verilog" enable="1"/>
-        <File path="src/shift_left.v" type="file.verilog" enable="1"/>
+        <File path="src/RISCV_32_Single_Cycle.cst" type="file.cst" enable="1"/>
+        <File path="src/timing.sdc" type="file.sdc" enable="1"/>
     </FileList>
 </Project>

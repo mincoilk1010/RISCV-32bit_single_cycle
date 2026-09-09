@@ -5,7 +5,6 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -24,5 +23,5 @@ Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Si
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.html" completed
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.txt" completed
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.tr.html" completed
-Wed Sep  2 17:25:22 2026
+Wed Sep  9 10:22:15 2026
 

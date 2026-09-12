@@ -65,7 +65,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>---</td>
+<td>/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/RISCV_32_Single_Cycle.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -89,7 +89,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Wed Sep  9 10:22:15 2026
+<td>Sat Sep 12 11:34:14 2026
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>24.594</td>
+<td>24.654</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
@@ -169,7 +169,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
-<td>0.398</td>
+<td>0.458</td>
 </tr>
 <tr>
 <td class="label">Psram Power (mW)</td>
@@ -180,7 +180,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>25.494</td>
+<td>25.495</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -188,7 +188,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>84.506</td>
+<td>84.505</td>
 </tr>
 </table>
 <h2><a name="Supply_Summary">Supply Information:</a></h2>
@@ -203,9 +203,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>VCC</td>
 <td>1.200</td>
-<td>0.152</td>
+<td>0.203</td>
 <td>3.499</td>
-<td>4.382</td>
+<td>4.442</td>
 </tr>
 <tr>
 <td>VCCX</td>
@@ -233,7 +233,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>Logic</td>
-<td>0.130</td>
+<td>0.191</td>
 <td>NA</td>
 <td>3.375</td>
 </tr>
@@ -253,44 +253,52 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>riscv_top</td>
-<td>0.130</td>
-<td>0.130(0.129)</td>
+<td>0.191</td>
+<td>0.191(0.187)</td>
 <tr>
 <td>riscv_top/Jump_and_Branch_sel/</td>
-<td>0.000</td>
-<td>0.000(0.000)</td>
-<tr>
-<td>riscv_top/MemToReg_sel/</td>
-<td>0.016</td>
-<td>0.016(0.000)</td>
-<tr>
-<td>riscv_top/adder/</td>
-<td>0.004</td>
-<td>0.004(0.000)</td>
-<tr>
-<td>riscv_top/alu/</td>
-<td>0.039</td>
-<td>0.039(0.000)</td>
-<tr>
-<td>riscv_top/alusrc1_sel/</td>
 <td>0.003</td>
 <td>0.003(0.000)</td>
 <tr>
+<td>riscv_top/PcSrc_sel/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>riscv_top/adder/</td>
+<td>0.018</td>
+<td>0.018(0.000)</td>
+<tr>
+<td>riscv_top/alu/</td>
+<td>0.045</td>
+<td>0.045(0.000)</td>
+<tr>
+<td>riscv_top/alusrc1_sel/</td>
+<td>0.011</td>
+<td>0.011(0.000)</td>
+<tr>
+<td>riscv_top/alusrc2_sel/</td>
+<td>0.005</td>
+<td>0.005(0.000)</td>
+<tr>
 <td>riscv_top/data_mem/</td>
-<td>0.056</td>
-<td>0.056(0.000)</td>
+<td>0.060</td>
+<td>0.060(0.000)</td>
 <tr>
 <td>riscv_top/ins_mem/</td>
+<td>0.013</td>
+<td>0.013(0.000)</td>
+<tr>
+<td>riscv_top/pc/</td>
 <td>0.001</td>
 <td>0.001(0.000)</td>
 <tr>
-<td>riscv_top/pc/</td>
-<td>0.000</td>
-<td>0.000(0.000)</td>
-<tr>
 <td>riscv_top/rf/</td>
-<td>0.009</td>
-<td>0.009(0.000)</td>
+<td>0.010</td>
+<td>0.010(0.000)</td>
+<tr>
+<td>riscv_top/write_data_reg_src_mux/</td>
+<td>0.017</td>
+<td>0.017(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -302,7 +310,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>clk</td>
 <td>27.000</td>
-<td>0.132</td>
+<td>0.193</td>
 </tr>
 </table>
 </div><!-- content -->

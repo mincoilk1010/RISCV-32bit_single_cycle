@@ -1,6 +1,7 @@
 -d /home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
+-cst /home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/RISCV_32_Single_Cycle.cst
 -cfg /home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/device.cfg
 -sdc /home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/timing.sdc
 -bit

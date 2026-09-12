@@ -7,19 +7,19 @@ module data_memory (
     input wire [2:0] funct3,
     output reg [31:0] read_data
 );
-    //reg [31:0] data_mem [0:255];
-    reg [31:0] data_mem [0:4095];
+    reg [31:0] data_mem [0:255];
+    // reg [31:0] data_mem [0:4095];
     integer i;
     initial begin
-        for(i=0; i<4096; i = i+1) begin
-            data_mem[i] = 0;
-        end
+//        for(i=0; i<4096; i = i+1) begin
+//            data_mem[i] = 0;
+//        end
         $readmemh("src/data.hex", data_mem);
     end
 
 
-    // wire [7:0] word_addr = addr[9:2];
-    wire [11:0] word_addr = addr[13:2];
+    wire [7:0] word_addr = addr[9:2];
+    // wire [11:0] word_addr = addr[13:2];
     wire [1:0] byte_offset = addr[1:0];
 
     wire [31:0] current_word = data_mem[word_addr];

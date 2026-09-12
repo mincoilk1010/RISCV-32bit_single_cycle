@@ -1,6 +1,8 @@
 Reading netlist file: "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg"
 Parsing netlist file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/gwsynthesis/RISCV_32_Single_Cycle.vg" completed
 Processing netlist completed
+Reading constraint file: "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/RISCV_32_Single_Cycle.cst"
+Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
@@ -23,5 +25,5 @@ Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Si
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.html" completed
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.rpt.txt" completed
 Generate file "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/impl/pnr/RISCV_32_Single_Cycle.tr.html" completed
-Wed Sep  9 10:22:15 2026
+Sat Sep 12 11:34:14 2026
 

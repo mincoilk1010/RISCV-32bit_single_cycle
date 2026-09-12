@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="riscv_top" Register="6" Lut="22" T_Register="14(6)" T_Alu="71(0)" T_Lut="674(22)" T_Ssram="144(0)">
- <SubModule name="pc" Register="8" T_Register="8(8)"/>
- <SubModule name="ins_mem" Lut="11" T_Lut="11(11)"/>
- <SubModule name="rf" Lut="66" Ssram="16" T_Lut="66(66)" T_Ssram="16(16)"/>
- <SubModule name="alu" Alu="63" Lut="49" T_Alu="63(63)" T_Lut="49(49)"/>
- <SubModule name="data_mem" Lut="256" Ssram="128" T_Lut="256(256)" T_Ssram="128(128)"/>
- <SubModule name="adder" Alu="8" T_Alu="8(8)"/>
- <SubModule name="alusrc1_sel" Lut="39" T_Lut="39(39)"/>
- <SubModule name="MemToReg_sel" Lut="228" T_Lut="228(228)"/>
- <SubModule name="Jump_and_Branch_sel" Lut="3" T_Lut="3(3)"/>
+<Module name="riscv_top" Register="6" Lut="57" T_Register="38(6)" T_Alu="95(0)" T_Lut="1252(57)" T_Ssram="160(0)">
+ <SubModule name="pc" Register="32" T_Register="32(32)"/>
+ <SubModule name="ins_mem" Lut="177" T_Lut="177(177)"/>
+ <SubModule name="rf" Lut="12" Ssram="32" T_Lut="12(12)" T_Ssram="32(32)"/>
+ <SubModule name="alu" Alu="63" Lut="136" T_Alu="63(63)" T_Lut="136(136)"/>
+ <SubModule name="data_mem" Lut="318" Ssram="128" T_Lut="318(318)" T_Ssram="128(128)"/>
+ <SubModule name="adder" Alu="32" T_Alu="32(32)"/>
+ <SubModule name="alusrc2_sel" Lut="77" T_Lut="77(77)"/>
+ <SubModule name="alusrc1_sel" Lut="159" T_Lut="159(159)"/>
+ <SubModule name="PcSrc_sel" Lut="34" T_Lut="34(34)"/>
+ <SubModule name="Jump_and_Branch_sel" Lut="44" T_Lut="44(44)"/>
+ <SubModule name="write_data_reg_src_mux" Lut="238" T_Lut="238(238)"/>
 </Module>

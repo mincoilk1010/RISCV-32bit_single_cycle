@@ -49,7 +49,7 @@
    },
    {
     "InstFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/riscv_top.v",
-    "InstLine" : 87,
+    "InstLine" : 86,
     "InstName" : "alu_ctrl",
     "ModuleFile" : "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/src/ALU_ctrl.v",
     "ModuleLine" : 1,

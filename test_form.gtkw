@@ -1,66 +1,57 @@
 [*]
 [*] GTKWave Analyzer v3.3.126 (w)1999-2026 BSI
-[*] Thu Sep  3 10:15:38 2026
+[*] Fri Sep 11 17:16:02 2026
 [*]
 [dumpfile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/riscv_top_wave_form.vcd"
-[dumpfile_mtime] "Wed Sep  2 16:09:57 2026"
-[dumpfile_size] 8557
+[dumpfile_mtime] "Fri Sep 11 16:35:28 2026"
+[dumpfile_size] 13319
 [savefile] "/home/minh-bui/Desktop/RISCV_32_Single_Cycle/test_form.gtkw"
-[timestart] 352040
+[timestart] 96400
 [size] 1920 1009
 [pos] -46 -30
-*-13.500000 386790 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-15.300000 230300 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] riscv_top_tb.
 [treeopen] riscv_top_tb.dut.
 [sst_width] 254
-[signals_width] 235
+[signals_width] 261
 [sst_expanded] 1
-[sst_vpaned_height] 669
+[sst_vpaned_height] 305
 @28
 riscv_top_tb.clk
 riscv_top_tb.arstn
-@22
-riscv_top_tb.led[5:0]
-@23
-riscv_top_tb.dut.ins_mem.instruction[31:0]
-@28
-riscv_top_tb.dut.alu_ctrl.ALUOp[1:0]
-@c00028
-riscv_top_tb.dut.alu_ctrl.funct[3:0]
-@28
-(0)riscv_top_tb.dut.alu_ctrl.funct[3:0]
-(1)riscv_top_tb.dut.alu_ctrl.funct[3:0]
-(2)riscv_top_tb.dut.alu_ctrl.funct[3:0]
-(3)riscv_top_tb.dut.alu_ctrl.funct[3:0]
-@1401200
--group_end
-@c00028
-riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
-@28
-(0)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
-(1)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
-(2)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
-(3)riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
-@1401200
--group_end
-@22
-riscv_top_tb.dut.rf.read_data_reg1[31:0]
-riscv_top_tb.dut.alu.ALU_result[31:0]
-riscv_top_tb.dut.data_mem.addr[31:0]
 @24
-riscv_top_tb.dut.data_mem.read_data[31:0]
-@22
-riscv_top_tb.dut.rf.write_addr_reg[4:0]
-@24
-riscv_top_tb.dut.rf.write_data[31:0]
-@22
 riscv_top_tb.dut.pc.in[31:0]
 riscv_top_tb.dut.pc.out[31:0]
-riscv_top_tb.dut.data_mem.addr[31:0]
-@24
-riscv_top_tb.dut.pc.in[31:0]
+@28
+riscv_top_tb.dut.cu.PcSrc
+riscv_top_tb.dut.cu.aluop[1:0]
+riscv_top_tb.dut.cu.alusrc1
+riscv_top_tb.dut.cu.alusrc2
+riscv_top_tb.dut.cu.branch
+riscv_top_tb.dut.cu.jump
+riscv_top_tb.dut.cu.lui
+riscv_top_tb.dut.cu.mem_read
+riscv_top_tb.dut.cu.mem_to_reg
+riscv_top_tb.dut.cu.mem_write
+@22
+riscv_top_tb.dut.cu.opcode[6:0]
+@28
+riscv_top_tb.dut.cu.reg_write
+riscv_top_tb.dut.cu.write_data_reg_src
+riscv_top_tb.dut.alu_ctrl.funct[3:0]
+riscv_top_tb.dut.alu_ctrl.alu_ctrl[3:0]
 @22
 riscv_top_tb.dut.alu.in1[31:0]
 riscv_top_tb.dut.alu.in2[31:0]
+@23
+riscv_top_tb.dut.alu.ALU_result[31:0]
+@24
+riscv_top_tb.dut.rf.write_addr_reg[4:0]
+@22
+riscv_top_tb.dut.rf.write_data[31:0]
+@28
+riscv_top_tb.dut.data_mem.funct3[2:0]
+@22
+riscv_top_tb.dut.imm_gen.imm_out[31:0]
 [pattern_trace] 1
 [pattern_trace] 0

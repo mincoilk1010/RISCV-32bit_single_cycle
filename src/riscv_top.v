@@ -82,9 +82,9 @@ module riscv_top (
         .lui(lui),
         .write_data_reg_src(write_data_reg_src)
     );
-
-
+ 
     ALU_ctrl alu_ctrl (
+        .inst_30(inst[30]),
         .ALUOp(aluop),
         .funct({inst[30], inst[14:12]}),
         .alu_ctrl(alu_ctrl_out)

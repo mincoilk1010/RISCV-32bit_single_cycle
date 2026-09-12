@@ -55,7 +55,8 @@ module control_unit (
                 mem_read = 0;
                 mem_write = 0;
                 branch = 0;
-                aluop = 2'b10;
+                // aluop = 2'b10;
+                aluop = 2'b11;
                 PcSrc = 0;
                 jump = 0;
                 lui = 0;
